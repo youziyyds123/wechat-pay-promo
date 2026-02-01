@@ -1,0 +1,31 @@
+{
+    "$schema": "https://schema.tauri.app/config/2",
+    "productName": "Pay Promo Generator",
+    "version": "0.0.0",
+    "identifier": "com.wechat-pay-pro.generator",
+    "build": {
+        "beforeDevCommand": "npm run dev",
+        "beforeBuildCommand": "npm run build",
+        "devUrl": "http://localhost:5173",
+        "frontendDist": "../dist"
+    },
+    "app": {
+        "windows": [
+            {
+                "title": "Pay Promo Generator",
+                "width": 1200,
+                "height": 900
+            }
+        ],
+        "security": {
+            "csp": null
+        }
+    },
+    "bundle": {
+        "active": true,
+        "targets": "all",
+        "icon": [
+            "icons/icon.png"
+        ]
+    }
+}
